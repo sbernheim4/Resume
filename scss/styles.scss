@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	padding-top: 30px;
+
+	// DEFAULT SETTINGS
+	div {
+
+		padding: 15px 60px;
+
+		hr {
+			height: .04em;
+			border: none;
+			background-color: black;
+		}
+	}
+
+	p {
+		font-size: 15px;
+	}
+
+
+	// SECTION SPECIFIC SETTINGS
+	.info {
+		text-align: center;
+		padding: 0px;
+
+		&__name {
+			padding: 5px;
+		}
+	}
+
+
+	.education {
+		&__school {
+
+		}
+
+		&__degree {
+
+		}
+
+		&__gpa {
+
+		}
+	}
+
+	.courses {
+
+		&__names{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			&--container {
+				padding: 0px;
+			}
+
+			p:before {
+				content: "\2022";
+				padding: 3px;
+			}
+
+			p {
+				text-align: left;
+			}
+		}
+
+	}
+
+	.experience {
+
+	}
+
+	.activities {
+
+	}
+}

@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  padding-top: 30px; }
+  body div {
+    padding: 15px 60px; }
+    body div hr {
+      height: .04em;
+      border: none;
+      background-color: black; }
+  body p {
+    font-size: 15px; }
+  body .info {
+    text-align: center;
+    padding: 0px; }
+    body .info__name {
+      padding: 5px; }
+  body .courses__names {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    body .courses__names--container {
+      padding: 0px; }
+    body .courses__names p:before {
+      content: "\2022";
+      padding: 3px; }
+    body .courses__names p {
+      text-align: left; }
