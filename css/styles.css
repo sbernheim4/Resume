@@ -4,12 +4,10 @@
 
 body {
   padding-top: 30px; }
-  body div {
-    padding: 15px 60px; }
-    body div hr {
-      height: .04em;
-      border: none;
-      background-color: black; }
+  body div hr {
+    height: .04em;
+    border: none;
+    background-color: black; }
   body p {
     font-size: 15px; }
   body .info {
@@ -17,14 +15,50 @@ body {
     padding: 0px; }
     body .info__name {
       padding: 5px; }
-  body .courses__names {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    body .courses__names--container {
-      padding: 0px; }
-    body .courses__names p:before {
-      content: "\2022";
-      padding: 3px; }
-    body .courses__names p {
-      text-align: left; }
+  body .education {
+    padding: 7px 60px; }
+  body .courses {
+    padding: 7px 60px; }
+    body .courses__names {
+      display: flex;
+      justify-content: space-around;
+      align-items: center; }
+      body .courses__names--container {
+        padding: 0px; }
+      body .courses__names p:before {
+        content: "\2022";
+        padding: 3px; }
+      body .courses__names p {
+        text-align: left; }
+  body .technologies {
+    padding: 7px 60px; }
+    body .technologies__languages {
+      padding-top: 15px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap; }
+      body .technologies__languages--language {
+        padding: 0 60px;
+        font-size: 40pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body .technologies__languages--language p {
+          padding-top: 5px; }
+    body .technologies__operating-systems {
+      padding-top: 15px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: nowrap; }
+      body .technologies__operating-systems--os {
+        padding: 0px 60px;
+        font-size: 40pt;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        body .technologies__operating-systems--os p {
+          padding-top: 5px; }
+      body .technologies__operating-systems .fa-windows {
+        color: #139bea; }
+      body .technologies__operating-systems .fa-linux {
+        color: #e13d19; }

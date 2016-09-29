@@ -1,3 +1,5 @@
+$section-padding: 7px 60px;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,11 +8,7 @@
 body {
 	padding-top: 30px;
 
-	// DEFAULT SETTINGS
 	div {
-
-		padding: 15px 60px;
-
 		hr {
 			height: .04em;
 			border: none;
@@ -33,8 +31,9 @@ body {
 		}
 	}
 
-
 	.education {
+		padding: $section-padding;
+
 		&__school {
 
 		}
@@ -49,8 +48,9 @@ body {
 	}
 
 	.courses {
+		padding: $section-padding;
 
-		&__names{
+		&__names {
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
@@ -68,7 +68,57 @@ body {
 				text-align: left;
 			}
 		}
+	}
 
+	.technologies {
+		padding: $section-padding;
+
+		&__languages {
+			padding-top: 15px;
+			display: flex;
+			justify-content: center;
+			flex-wrap: nowrap;
+
+			&--language {
+				padding: 0 60px;
+				font-size: 40pt;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				p {
+					padding-top: 5px;
+				}
+			}
+		}
+
+		&__operating-systems {
+			padding-top: 15px;
+
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: nowrap;
+
+			&--os {
+				padding: 0px 60px;
+				font-size: 40pt;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				p {
+					padding-top: 5px;
+				}
+			}
+
+			.fa-windows {
+				color: rgb(19,155,234);
+			}
+
+			.fa-linux {
+				color: rgb(225, 61, 25);
+			}
+		}
 	}
 
 	.experience {
