@@ -3,12 +3,15 @@
   padding: 0;
   font-family: 'Lato', sans-serif; }
 
+h4 {
+  font-size: 14pt; }
+
 body {
   padding-top: 30px; }
   body div hr {
-    height: .04em;
+    height: 1px;
     border: none;
-    background-color: black; }
+    border-top: solid 1px #aaa; }
   body p {
     font-size: 15px; }
   body .info {
@@ -63,3 +66,15 @@ body {
         color: #139bea; }
       body .technologies__operating-systems .fa-linux {
         color: #e13d19; }
+  body .experience {
+    padding: 7px 60px; }
+    body .experience__ex {
+      padding-bottom: 15px; }
+      body .experience__ex--company {
+        text-decoration: none;
+        font-size: 15pt; }
+      body .experience__ex--title {
+        font-size: 12pt; }
+      body .experience__ex--responsibilities {
+        font-size: 10pt;
+        padding-left: 30px; }

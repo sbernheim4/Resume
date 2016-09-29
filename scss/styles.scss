@@ -6,14 +6,19 @@ $section-padding: 7px 60px;
 	font-family: 'Lato', sans-serif;
 }
 
+h4 {
+	font-size: 14pt;
+}
+
+
 body {
 	padding-top: 30px;
 
 	div {
 		hr {
-			height: .04em;
+			height: 1px;
 			border: none;
-			background-color: black;
+			border-top: solid 1px #aaa;
 		}
 	}
 
@@ -34,18 +39,6 @@ body {
 
 	.education {
 		padding: $section-padding;
-
-		&__school {
-
-		}
-
-		&__degree {
-
-		}
-
-		&__gpa {
-
-		}
 	}
 
 	.courses {
@@ -123,6 +116,26 @@ body {
 	}
 
 	.experience {
+		padding: $section-padding;
+
+		&__ex {
+			padding-bottom: 15px;
+
+			&--company {
+				text-decoration: none;
+				// color: rgb(250,163,46);
+				font-size: 15pt;
+			}
+
+			&--title{
+				font-size: 12pt
+			}
+
+			&--responsibilities {
+				font-size: 10pt;
+				padding-left: 30px;
+			}
+		}
 
 	}
 
