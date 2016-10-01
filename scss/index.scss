@@ -1,4 +1,10 @@
 $section-padding: 7px 60px;
+$icon-wdith: 90px;
+$icon-font-size: 25px;
+
+// div {
+// 	border: 1px solid green;
+// }
 
 * {
 	margin: 0;
@@ -62,6 +68,7 @@ body {
 				content: "\2022";
 				padding: 3px;
 			}
+
 		}
 	}
 
@@ -69,17 +76,26 @@ body {
 		padding: $section-padding;
 
 		&__languages {
-			padding-top: 15px;
+			padding: 15px 15px 15px 15px;
 			display: flex;
-			justify-content: center;
+			justify-content: flex-start;
 			flex-wrap: wrap;
+			@media all and (max-width: 779px) {
+				justify-content: center;
+				padding-bottom: 0px;
+			}
+
 
 			&--language {
-				padding: 15px 15px;
-				font-size: 20pt;
+				width: $icon-wdith;
+				font-size: $icon-font-size;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+
+				@media all and (max-width: 779px) {
+					padding-bottom: 15px;
+				}
 
 				p {
 					padding-top: 5px;
@@ -88,23 +104,27 @@ body {
 		}
 
 		&__operating-systems {
-			padding-top: 15px;
-
+			padding: 15px 15px 15px 15px;
 			display: flex;
 			justify-content: flex-start;
-			flex-wrap: wrap;
+			align-items: center;
 
 			@media all and (max-width: 479px) {
 				justify-content: center;
+				padding-bottom: 0px;
+
 			}
 
 			&--os {
-				width: 0px;
-				padding: 15px 60px;
-				font-size: 40pt;
+				width: $icon-wdith;
+				font-size: $icon-font-size;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+
+				@media all and (max-width: 479px) {
+					padding-bottom: 15px;
+				}
 
 				p {
 					padding-top: 5px;
