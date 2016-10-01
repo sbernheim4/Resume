@@ -10,10 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
-  },
-  "devDependencies": {
-    "browser-sync": "^2.16.0",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^2.3.2",
+	"gulp-sourcemaps": "^1.6.0",
+	"browser-sync": "^2.16.0",
+	"gulp-sass": "^2.3.2",
+	"devicon": "^2.0.0",
+	"font-awesome": "^4.6.3"
   }
 }
