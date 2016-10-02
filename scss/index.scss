@@ -1,4 +1,4 @@
-$section-padding: 7px 60px;
+$section-padding: 5px 60px;
 $icon-wdith: 90px;
 $icon-font-size: 25px;
 
@@ -43,12 +43,34 @@ body {
 		padding: 0px;
 
 		&__name {
-			padding: 5px;
+			padding: 5px 40px;
+		}
+
+		&__contact {
+			padding: 5px 40px;
 		}
 	}
 
 	.education {
 		padding: $section-padding;
+
+		&__container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			&__left {
+				padding-right: 15px;
+			}
+
+			&__right {
+				min-width: 67px;
+				padding-left: 15px;
+			}
+		}
+
+
 	}
 
 	.courses {
@@ -68,7 +90,6 @@ body {
 				content: "\2022";
 				padding: 3px;
 			}
-
 		}
 	}
 
@@ -76,15 +97,17 @@ body {
 		padding: $section-padding;
 
 		&__languages {
-			padding: 15px 15px 15px 15px;
+			padding: 15px 15px 0px 15px;
 			display: flex;
 			justify-content: flex-start;
 			flex-wrap: wrap;
-			@media all and (max-width: 779px) {
+			@media all and (max-width: 680px) {
 				justify-content: center;
-				padding-bottom: 0px;
 			}
 
+			p {
+				padding-top: 5px;
+			}
 
 			&--language {
 				width: $icon-wdith;
@@ -102,43 +125,6 @@ body {
 				}
 			}
 		}
-
-		&__operating-systems {
-			padding: 15px 15px 15px 15px;
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
-
-			@media all and (max-width: 479px) {
-				justify-content: center;
-				padding-bottom: 0px;
-
-			}
-
-			&--os {
-				width: $icon-wdith;
-				font-size: $icon-font-size;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-
-				@media all and (max-width: 479px) {
-					padding-bottom: 15px;
-				}
-
-				p {
-					padding-top: 5px;
-				}
-			}
-
-			.fa-windows {
-				color: rgb(19,155,234);
-			}
-
-			.fa-linux {
-				color: rgb(225, 61, 25);
-			}
-		}
 	}
 
 	.experience {
@@ -149,11 +135,12 @@ body {
 
 			&--company {
 				text-decoration: none;
-				// color: rgb(250,163,46);
+				color: rgb(103, 131, 220);
 				font-size: 15pt;
 			}
 
 			&--title{
+				color: rgb(206, 91, 64);
 				font-size: 12pt
 			}
 
